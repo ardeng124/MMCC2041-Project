@@ -1,0 +1,485 @@
+body{
+    margin-top: 0;
+    font-family:Nunito, Arial, Helvetica, sans-serif;
+
+}
+nav {
+    padding-top:  200px;
+    width:270px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+nav a {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 8px;
+    font-size: 1.3em;
+    color: #FFB100;
+    margin-top:10px
+}
+nav a:hover {
+    color:#FFB190
+}
+nav #active {
+    font-style: bold;
+    font-weight: bold;
+}
+header {
+    top:0;
+    overflow:hidden;
+    width:100.5%;
+    position: sticky;
+    z-index: 3;
+    margin-left:-6px;
+}
+header h1 {
+    position: relative;
+    text-align: center;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 4.0em;
+    font-weight: 700;
+    font-style:bold;
+    background-color: #642323;
+    color:white;
+    padding:30px;
+    margin:0;
+}
+
+header img {
+    object-fit: cover;
+    /* transform: scale(1.5); */
+    object-position: 100% 45%;
+    height:164px;
+    position: absolute;
+    left:0;
+    top:0px;
+    /* top:99px; */
+    /* top:-67px; */
+    /* height: auto; */
+    opacity: 20%;
+    margin-right: auto;
+    width: 100%;
+    margin-left: auto;
+    mix-blend-mode: lighten;
+    /* width:100%; */
+}
+
+main {
+    margin-left: 300px;
+    margin-right:10px;
+    width: auto;
+    /* margin-bottom: 80px;
+    padding-bottom: 70px; */
+}
+main p {
+    font-family:Nunito, Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right: 20px; 
+}
+
+/* .grid {
+    width:100%;
+    display:grid;   
+    grid-template-columns: 20% 80%;
+    grid-column-gap: 10px
+} */
+
+.circle {
+    border: 5px #FFB100;
+    border-style:inset;
+    /* background: #FFB100; */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+ /* padding: 10px; */
+    padding-left: 23px;
+    margin-right:6px;
+}
+.circleActive {
+    border: 5px #FFB100;
+    border-style:inset;
+    background: #FFB190;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+ /* padding: 10px; */
+    padding-left: 23px;
+    margin-right:6px;
+}
+h2{
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size:40px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h3 {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+figure {
+    position: relative;
+    width:fit-content;
+    display:flex;
+    justify-content: center;
+}
+figure.imgHolder img {
+	z-index: 1;
+    position: relative;
+	top: 0;
+	left: 0;
+    height: auto;
+    /* change back to 45% if images suck  */
+    width:30em;
+
+}
+figure.imgHolder a {
+    color: #f7fcc7;
+}
+figure.imgHolder figcaption {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(136, 9, 9, 0.7);
+	color: #ffffff;
+	font-size: 18px;
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+    font-family:Nunito, Arial, Helvetica, sans-serif;
+    text-align: center;
+    opacity: 90%;
+    /* margin-left: 25%; */
+}
+/* #progressBar {
+    position: fixed;
+    margin-top:0px;
+    width: 10px;
+    height:auto;
+    margin-left: 270px;
+    background-color: #f7cfb7;
+    opacity: 80%;
+    padding: 2px;
+} */
+#progressBar {
+    position: fixed;
+    margin-top:0px;
+    width: 10px;
+    height:10px;
+    margin-left: -5px;
+    background-color: #a8856f;
+    opacity: 100%;
+    padding: 2px;
+    z-index: 5;
+}
+#volcano-gifs{
+    display: grid;
+    background-color: #FCF4DE;
+    grid-gap: 5px;
+    padding:30px;
+    grid-template-areas: 
+    '#divergent-1 #divergent-1'
+    '#convergent-1 #convergent-1';
+    grid-row-gap: 50px;
+}
+.grid-item {
+    display: grid;
+    grid-template-areas: 
+    'img h2'
+    'none p';
+}
+.grid-item img {
+    width:400px;
+    height: 300px;
+}
+.grid-item h3 {
+    font-size:35px;
+}
+#top-message {
+    margin:20px;
+    padding:20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.see-more-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 3.5em;
+}
+.see-more-btn:hover button-shape {
+    fill: #642323;
+}
+
+h4 {
+    font-size:20px;
+    font-family:Nunito, Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom:5px;
+}
+.volcano-type-section-coloured {
+    display: grid;
+    grid-template-areas: 
+    'left right';
+    background-color: #FCF4DE;
+    padding:20px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.volcano-aftermath-section-coloured {
+    display: block;
+    background-color: #F6F6F6;
+    padding:20px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+.volcano-type-section {
+    display: grid;
+    grid-template-areas: 
+    'left right';
+    padding:20px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.volcano-aftermath-section {
+    display: block;
+    padding:20px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+#more-volcano-info iframe {
+    justify-self: center;
+    margin-left: 35%;
+}
+.volcano-info-section-coloured {
+    text-align: center;
+    font-size: 20px;
+    background-color: #FCF4DE;
+    padding:20px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.volcano-info-section-coloured-bottom {
+    display: grid;
+    grid-template-areas: 
+    'left right';
+    background-color: #F6F6F6;
+    padding:20px;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+#parallax-1 {
+    background-image: url("images/wallpapersden.com_volcano-mountains_2560x1440.jpg");
+    min-height: 600px;
+}
+#parallax-2 {
+    background-image: url("images/Kilauea_Fissure_8_cone_erupting_on_6-28-2018.jpg");
+    min-height: 400px;
+}
+#parallax-3 {
+    background-image: url("images/DcnDYh4WsAAxWLi.jpg");
+    min-height: 400px;
+}
+#parallax-4 {
+    background-image: url("images/DenglerSW-Stromboli-20040928-1230x800.jpg");
+    min-height: 400px;
+}   
+#parallax-5 {
+    background-image: url("images/01-reference-volcanoes-cb9bmt_2x1.webp");
+    min-height: 400px;
+}  
+a{
+    font-family:Nunito, Arial, Helvetica, sans-serif;
+}
+.next-page-btn{
+    position: fixed;
+    cursor: pointer;
+    top:91%;
+    left:84%;
+    z-index: 5;
+    font-family: Raleway;
+    background-color: #ffe30b; 
+    text-align: center;
+    padding: 16px 33px;
+    border: 2px solid #cffa12;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+/* .next-page-btn span:after {
+    content: '\00bb';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.next-page-btn:hover span {
+    padding-right: 25px;
+}
+
+.next-page-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.next-page-btn span {
+    display: inline-block;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+} */
+.next-page-btn:active {
+    background-color: white;
+    transition-duration: 0.2s;
+}
+.next-page-btn:hover{
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.2s;
+    padding-right: 25px;
+    opacity: 0;
+}
+
+.next-page-btn:hover::after {
+    content: " >>";
+    right: -20px;
+    transition-duration: 0.4s;
+}
+.next-page-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.volcano-img-large {
+    margin-left:15%;
+    width:75%;
+    margin-top: 60px;
+}
+ 
+.volcano-img-xtra-large {
+    margin-left:5%;
+    width:90%;
+    margin-top: 60px;
+}
+.tooltip .tooltip-text {
+    visibility:hidden;
+    width: fit-content;
+    background-color:rgba(136, 9, 9, 0.7);
+    color:white;
+    border-radius: 5px;
+    padding:5px;
+    position: absolute;
+    z-index: 3;
+    margin-top:20px;
+    margin-left: -80px;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;    
+}
+.tooltip {
+    cursor: help;
+    border-bottom: dashed 1px black;
+    text-align: center;
+}
+.caption {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size:0.95em;
+    margin-left: 20px;
+    margin-right: 20px; 
+    padding:0px;
+}
+.see-more-btn{ 
+    position: relative;
+    cursor: pointer;
+    margin-left: 3.5em;
+}
+.see-more-btn p {
+    position: absolute;
+    top:-4px;
+    left:1px;
+    font-weight: 100;
+}
+.see-more-btn-2 {
+    position: relative;
+  background-color: #F89090;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.see-more-btn-2:after {
+    position: absolute;
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.see-more-btn-2:active::after{
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    transition: 0;
+}
+.see-more-btn-2 span {
+    display: inline-block;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-weight: 300;
+}
+
+/* .see-more-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 3.5em;
+} */
+.down-btn {
+      width: 0;
+      height: 0;
+      border-left: 83px solid transparent;
+      border-right: 83px solid transparent;
+      border-top: 80px solid #F89090;
+}
+footer {
+    padding:5px;
+    /* margin-top:30px; */
+    /* position: fixed;
+    top:85%;
+    left:15%; */
+    background-color: white;
+    margin-left: 330px;
+
+}

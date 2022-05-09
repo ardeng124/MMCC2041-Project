@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Volcanoes: Volcano formation</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200;300;400;600&family=Raleway:wght@100;300;400;800;900&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "index.js" defer></script>
+    <script>
+
+        $(document).ready(function () {
+        
+            //scroll to convergent section
+            $(function() {
+                if(window.location.hash == "#convergent") {
+                    $('html,body').stop().animate({
+                    scrollTop: 3245
+                    }, {
+                        duration: 800
+                    });
+                }
+            })
+            //make next page button appear at bottom when close to end of page
+            $(".next-page-btn").click(function (e) {
+                window.location = "volcano-types.html"
+            });
+            //jump to more info section button
+            $('.see-more-btn').click(function(e) {
+                e.preventDefault();
+                let targetPosition = $('#more-volcano-info').offset().top - 180
+                $('html,body').stop().animate({
+                    scrollTop: targetPosition
+                }, {
+                    duration: 800
+                });
+            })
+        })
+        
+        
+        </script>
+</head>
+
+<body>
+    <header> 
+        <h1>Volcano Formation</h1>
+        <img src="images/header landscape banner.jpg">
+    </header>
+    <nav>
+        <a href="index.html"><i class="circle"></i> Intro</a> 
+        <a id = "active" href="volcano-formation.html"><i class="circleActive"></i>Volcano Formation</a>
+        <a href="volcano-types.html"><i class="circle"></i>Volcano Types</a>
+        <a href="eruption-types.html"><i class="circle"></i>Eruption Types</a>
+        <a href="eruption-aftermath.html"><i class="circle"></i>Eruption Aftermath</a>
+    </nav>
+    <div id = "progressBar"> </div>
+    <main>
+        <br>
+        <section id = "top-message">
+        <p>Volcanoes are formed on the boundaries of tectonic plates due to their various forms of movement.<br>
+            Tectonic plates can move in three main ways:</p><br>
+        </section>
+        <section id = "volcano-gifs">
+            <div id = "divergent-1" class = "grid-item">
+                <div class = "left">
+                    <h3>Divergent plate boundaries</h3> <br>
+                    <p>Plates shifting away from each other</p>
+                    <!-- <button class = "see-more-btn-2"><span>Read more</span></button> -->
+                    <div class = "see-more-btn">
+                        <div class = "down-btn"></div>
+                        <p> Read more</p>
+                    </div>
+                   
+                </div>
+                <div class = "right">
+                    <figure class="imgHolder" id="divergent-img">
+                        <img src="images/divergent-plate-boundary.svg" alt="image of divergent plate boundary">
+                        <figcaption>Image of a divergent plate boundary, <a href="https://en.wikipedia.org/wiki/Divergent_boundary"
+                                target="_blank">Source</a> </a></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <br> 
+            <div id = "convergent-2" class = "grid-item">
+                <div class = "left">
+                    <figure class="imgHolder" id="divergent-img">
+                        <img src="images/convergent.png" alt="image of convergent plate boundary">
+                        <figcaption>Image of a convergent plate boundary, <a href="https://en.wikipedia.org/wiki/Convergent_boundary"
+                                target="_blank">Source</a> </a></figcaption>
+                    </figure>
+                </div>
+                <div class = "right">
+                    <h3>Convergent plate boundaries<br></h3>
+                    <p> Plates coming together</p>
+                    <div class="see-more-btn">
+                        <div class="down-btn"></div>
+                        <p> Read more</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="conservative-1" class="grid-item">
+                <div class="left">
+                    <h3>Conservative plate boundaries</h3> <br>
+                    <p>Plates scrape past each other. <br>Conservative plate movements do not often form volcanoes.<br><br></p>
+                </div>
+                <div class="right">
+                    <figure class="imgHolder" id="divergent-img">
+                        <img src="images/conservative.svg" alt="image of conservative plate boundary">
+                        <figcaption>Image of a conservative plate boundary, <a
+                                href="htt ps://en.wikipedia.org/wiki/Transform_fault" target="_blank">Source</a> </a>
+                        </figcaption>
+                        <br>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        <div class = "parallax" id = "parallax-1"></div>
+        <caption> <a href = "https://wallpapersden.com/volcano-mountains-wallpaper/2560x1440/"target="_blank">Source </a></caption>
+        <br><br><br>
+        <section id = "more-volcano-info">
+            <h2> How volcanoes are formed</h2>
+            <p>Volcanoes are formed on the boundaries of tectonic plates when any of these movements happen.
+        
+            </p>
+            <br>
+            <h4> Divergent plates</h4>
+            <p>Divergent plates form volcanoes as the earth’s crust is pulled apart, allowing
+                <span class = "tooltip">magma
+                    <span class = "tooltip-text">lava when it is underground, magma becomes lava when it becomes exposed to the atmosphere</span>
+                </span>
+            to rise. On the ocean floor this lava cools and solidifies into ocean crust. This magma escaping from the rift happens continuously and eventually forms a volcano.<br>
+            </p>
+            <iframe src='https://gfycat.com/ifr/AdoredSillyHind' frameborder='0' scrolling='no' allowfullscreen width='400'
+                height='300'></iframe>
+            
+            <br>
+            <h4> Convergent plates</h4>
+            <p>
+            Convergent plates form (as seen in the diagram) when one plate slides underneath another. The resulting volcano depends on the type of plates (either continental or oceanic) converging. The two plates colliding and sliding under causes what is known as a subduction zone (area where a tectonic plate slides under another). These subduction zones lead to volcanoes forming due to the sunken plate altering the pressure and temperature of the magma. </p>
+
+            <figure class="imgHolder" id="convergent-gif">
+                <img src="images/convergent.gif" alt="image of a convergent plate boundary">
+                <figcaption> Animated GIF of a convergent plate boundary, <a
+                        href="https://www.earthquakeauthority.com/EQA2/media/Image/Blog/Subduction-zones-or-convergent-margins_1.gif"
+                        target="_blank">Source</a></figcaption>
+            </figure>
+
+            <br>
+            <h4> Hotspots</h4>
+            <p>
+            Volcanoes can also form away from plate boundaries in places known as hotspots. Hotspots are areas of overheated magma. Because of the magma being abnormally hot they can melt the crust of the plate above them. This melting of the crust can create volcanic activity at the surface due to the magma escaping.
+            </p>
+        </section>
+    </main>
+    <br>
+<footer>
+    <button class="next-page-btn"><span>Next: Types </span></button>
+    Sources for this page: <br>
+    <a href ="https://www.nationalgeographic.com/environment/article/volcanoes" target="_blank"> Volcanoes, Explained - National Geographic</a> <br>
+    <a href = "https://www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/how-volcanoes-form-2/" target="_blank">How volcanoes form - British Geological Survey</a>
+</footer>
+</body>
+
+</html>

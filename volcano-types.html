@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Volcanoes: Volcano types</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200;300;400;600&family=Raleway:wght@100;300;400;800;900&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+
+    <script>
+        $(document).ready(function () {
+            $(function() {
+                if(window.location.hash == "#shield-volcanoes") {
+                    $('html,body').stop().animate({
+                    scrollTop: 1774
+                    }, {
+                        duration: 800
+                    });
+                }
+            })
+            //make next page button appear at bottom when close to end of page
+            $(".next-page-btn").click(function (e) {
+                window.location = "eruption-types.html"
+            });        
+        })
+
+        
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Volcano Types</h1>
+        <img src="images/header landscape banner.jpg">
+    </header>
+    <!-- <form>
+        <input type = 'radio' id = 'intro' name = "Introduction" checked>
+        <label> Introduction</label>
+    </form> -->
+    <nav>
+        <a href="index.html"><i class="circle"></i> Intro</a> 
+        <a href="volcano-formation.html"><i class="circle"></i>Volcano Formation</a>
+        <a id = "active" href="volcano-types.html"><i class="circleActive"></i>Volcano Types</a>
+        <a href="eruption-types.html"><i class="circle"></i>Eruption Types</a>
+        <a href="eruption-aftermath.html"><i class="circle"></i>Eruption Aftermath</a>
+    </nav>
+        <div id="progressBar"> </div>
+    <main>
+        <section id="top-message">
+            <br>
+            <p>There are four basic types of volcanoes; cinder cones, composite volcanoes, shield volcanoes, and lava domes.</p>
+        </section>
+        <section class = "volcano-type-section-coloured" id = "cinder-cone">
+                <div class = "left">
+                    <h2>Cinder cones</h2>
+                    <p>Not only the most common type of volcanic formation, but also the simplest and smallest.
+                    <br><br><br>
+                    Cinder cones consist of fragments of ash or cinders that have built up from eruptions over time. 
+                    <br><br><br>
+                    They are often symmetrical and circular and have slopes at 30-40° with a bowl shaped crater at the top.
+                    <br><br><br>
+                    One of the most famous cinder cones is a volcano in Mexico called Paracutin.
+                </p>
+                    
+                </div>
+                <div class = "right">
+                    <figure class="imgHolder">
+                        <img src="images/Cinder-Cone-Feature-425x319.webp" alt="diagram of a cinder cone volcano">
+                        <figcaption>Diagram of a cinder cone volcano, <a href="https://earthhow.com/cinder-cone/"
+                                target="_blank">Source</a> </a></figcaption>
+                    </figure>
+                    <figure class="imgHolder">
+                        <img src="images/A_122_C5E_2QtVcAIrCt8.jpg" alt="image of a cinder cone volcano">
+                        <figcaption> Image of a Paracutin, a cinder cone volcano, <a href="https://www.livescience.com/27295-volcanoes.html"
+                                target="_blank">Source</a> </a></figcaption>
+                    </figure>
+                </div>
+                
+        </section>
+
+        <section class="volcano-type-section" id = "composite-volcano-section">
+            <div class="left">
+                <h2>Composite volcanoes</h2>
+                <p>Composite volcanoes, also known as stratovolcanoes are formed by many layers of lava, ash, and rocks piling up on top of
+                each other after eruptions.
+                <br><br><br>
+                
+                Due to the composition of these volcanoes there are many vents inside which lava can erupt from, as well as a main
+                crater.
+                <br><br><br>
+                
+                Composite volcanoes are most commonly formed in subduction zones <a href ="volcano-formation.html#convergent">(convergent plates).</a>
+                </p>
+            </div>
+            <div class="right">
+                <figure class="imgHolder">
+                    <img src="images/main-qimg-9c47b698236f259bc12a2f832786b969.gif" alt="diagram of a composite volcano">
+                    <figcaption>Diagram of a composite volcano, <a href="https://www.slideshare.net/HannahHogan/gcse-geography-a-aqa-specification-the-restless-earth"
+                            target="_blank">Source</a> </a></figcaption>
+                </figure>
+                <figure class="imgHolder">
+                    <img src="images/volcanic-eruption-657324444-5b8eb29c46e0fb002525f73c.jpg" alt="image of a composite volcano">
+                    <figcaption> Image of Semeru Volcano, a composite volcano in indonesia <a href="https://www.thoughtco.com/composite-volcano-facts-4174718"
+                            target="_blank">Source</a> </a></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="volcano-type-section-coloured" id = "shield-volcano">
+            <div class="left">
+                <h2>Shield volcanoes</h2>
+                <p>Shield volcanoes are wide, low profile volcanoes. They from through the build-up of lava from eruptions, and due to the
+                very low viscosity of the lava, the flow is much thinner further out from the crater.
+                <br><br><br>
+                As a result shield volcanoes form with very wide and shallow sloping sides.
+                <br><br><br>
+                
+                Shield volcanoes are most notably known for making up a handful of the Hawaiian islands. The worlds most active volcano,
+                Kīlauea, is a shield volcano on the main Hawaiian island. Shield volcanoes are formed by hotspots.
+                </p>
+                <br><br>
+            </div>
+            <div class="right">
+                <br><br><br>
+                <figure class="imgHolder">
+                    <img src="images/fe235088258619d81b058527d4391ac5.jpg" alt="diagram of a shield volcano">
+                    <figcaption>Diagram of a shield volcano, <a href="https://earthhow.com/cinder-cone/"
+                            target="_blank">Source</a> </a></figcaption>
+                </figure>
+            </div>
+        </section>
+        <div class = "parallax" id = "parallax-2"></div>
+        <p class="caption"> Image of Kīlauea, an active shield volcano on the Hawaiian islands  <a href = "https://en.wikipedia.org/wiki/K%C4%ABlauea"target="_blank">Source </a></p>
+
+        <section class="volcano-type-section" id = "lava-dome-section" style = "margin-bottom:20px;">
+            <div class="left">
+                <h2>Lava domes</h2>
+                <p>Lava domes are formed by highly viscous lava that cannot flow away from the vent.
+                <br><br>
+                They often form inside the craters of existing volcanoes and are most common in convergent plate boundaries.
+                <br><br>
+                They sit at the opening of the vent because the lava does not have enough pressure to erupt explosively, and with the lava also being very viscous the flow doesn’t leave the vent.
+                </p>
+            </div>
+            <div class="right">
+                <br><br>
+                <figure class="imgHolder">
+                    <img src="images/domes-crater-Mount-Saint-Helens-Washington.jpg" alt="image of a lava dome">
+                    <figcaption>Image of a lava dome in the crater of Mt Saint Helens <a
+                            href="https://www.britannica.com/science/volcanic-dome"
+                            target="_blank">Source</a> </a></figcaption>
+                </figure>
+            </div>
+        </section>
+        
+    </main>
+    
+<footer>
+    <button class="next-page-btn"><span>Next: Eruptions </span></button>
+    Sources for this page: <br>
+    <a href="https://pubs.usgs.gov/gip/volc/types.html" target="_blank"> Principal types of volcanoes - USGS</a> <br>
+    <a href="https://en.wikipedia.org/wiki/Cinder_cone" target="_blank">Cinder cone volcanoes - Wikipedia</a> <br>
+    <a href="https://en.wikipedia.org/wiki/Stratovolcano" target="_blank">Stratovolcanos - Wikipedia</a> <br>
+    <a href="https://www.universetoday.com/40464/composite-volcano/" target="_blank">Composite Volcanoes - Universe Today</a>
+
+</footer>
+</body>s
+
+</html>

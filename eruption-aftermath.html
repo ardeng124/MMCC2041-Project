@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Volcanoes: Aftermath</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200;300;400;600&family=Raleway:wght@100;300;400;800;900&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+    <script>
+        $(document).ready(function () {
+        
+            $(function () {
+                if (window.location.hash == "#pyroclastic") {
+                    $('html,body').stop().animate({
+                        scrollTop: 306
+                    }, {
+                        duration: 500
+                    });
+                }
+            })
+        })
+        
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Eruption Aftermath</h1>
+        <img src="images/header landscape banner.jpg">
+    </header>
+    <!-- <form>
+        <input type = 'radio' id = 'intro' name = "Introduction" checked>
+        <label> Introduction</label>
+    </form> -->
+    <nav>
+        <a href="index.html"><i class="circle"></i> Intro</a> 
+        <a href="volcano-formation.html"><i class="circle"></i>Volcano Formation</a>
+        <a href="volcano-types.html"><i class="circle"></i>Volcano Types</a>
+        <a href="eruption-types.html"><i class="circle"></i>Eruption Types</a>
+        <a id = "active" href="eruption-aftermath.html"><i class="circleActive"></i>Eruption Aftermath</a>
+    </nav>
+    <div id="progressBar"> </div>
+    <main>
+        <br>
+        <div class="parallax" id="parallax-5"> </div>
+
+        <section class="volcano-aftermath-section-coloured">
+            <h2>Pyroclastic flows</h2>
+            <p>
+                A pyroclastic flow is a thick and extremely fast-moving flow of solid lava, gasses, and ash.
+                <br><br>
+                As they are made up of lava and volcanic material, they are extremely hot, and very destructive.
+                <br><br>
+                The main causes of pyroclastic flows are when gases in an eruption lose their upward momentum and fall back down, or
+                when a lava dome collapses.
+                <br><br>
+                Pyroclastic flows are most common in <a href = "eruption-types.html#vulcanian-eruptions">vulcanian eruptions.</a>
+            </p>
+        </section>
+
+        <section class="volcano-aftermath-section">
+            <h2>Volcanic Ash</h2>
+            <p>
+                Volcanic ash is a mixture of material, volcanic glass, and rocks that shoot out of a volcano as it erupts. The particles are very small, often < 2mm in diameter. 
+                <br><br>
+                Due to its small size, volcanic ash can be carried over great distances by wind. Because of this, volcanic ash can have widespread economic, social, and physical impact.
+                <br><br>
+                Ash can cause major disruption to electrical and water infrastructure. Wet deposits of ash can interfere with electrical equipment and wires, as well chemicals and materials from the ash contaminating water supplies.
+                <br><br>
+                Volcanic ash can also cause major disruption to aircraft; High volumes of dark ash in the sky can restrict visibility, interfere with equipment readings, and cause physical damage to aircraft through abrasion. 
+            </p>
+
+            <img class = "volcano-img-large"src = "images/volcano.jpg" alt = "image of a volcano and surrounding landscape covered with ash">
+            <br>
+            <p class = "caption" style = "margin-left:15%;"> Eyjafjallajökull Volcano and landscape covered with ash <a href="https://www.techexplorist.com/scientists-discovered-two-effects-volcanic-ash-sedimentation/38134/"target="_blank">Source </a></p>
+
+        </section>
+
+        <section class="volcano-type-section-coloured" id="shield-volcano">
+            <div class="left">
+                <h2>Rock formations</h2>
+                <h4> Obsidian </h4>
+                <p>Obsidian is a natural glass formed by rapid cooling of lava from volcanoes, usually black in colour.
+                <br><br>
+                Obsidian solidifies above the Earth’s surface, in several different scenarios:
+                <br><br>
+                - When lava meets water
+                <br><br>
+                - Along edges of a lava flow
+                <br><br>
+                - When lava rapidly cools while airborne
+                </p>
+                <br><br>
+                <h4> Pumice </h4>
+                <p>Pumice is another volcanic rock.
+                <br><br>
+                Pumice is formed when lava with high water and gas content is expelled from a volcano.
+                <br><br>
+                Due to the gasses the lava is bubbly and frothy, and when this cools the result is a rock filled with tiny gas bubbles
+                and holes.
+                </p>
+            </div>
+            <div class="right">
+                <br><br><br>
+                <figure class="imgHolder">
+                    <img src="images/pngegg.png" alt="Image of a piece of obsidian">
+                    <figcaption>Image of a piece of obsidian, <a href="https://www.pngegg.com/en/png-xkock/download"
+                            target="_blank">Source</a> </a></figcaption>
+                </figure>
+                <br><br>
+                <figure class="imgHolder">
+                    <img src="images/5c1230186ac52602a4427f45.png" alt="Image of a piece of pumice">
+                    <figcaption>Image of a piece of pumice, <a href="https://www.stickpng.com/img/nature/pumice/brownish-pumice-stone"
+                            target="_blank">Source</a> </a></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    
+<footer>
+    Sources for this page: <br>
+    <a href="https://www.nationalgeographic.org/encyclopedia/pyroclastic-flow/" target="_blank"> Pyroclastic Flows - National Geographic</a> <br>
+    <a href="https://www.nationalgeographic.org/encyclopedia/volcanic-ash/" target="_blank"> Volcanic Ash - National Geographic</a> <br>
+    <a href="http://www.bom.gov.au/aviation/data/education/volcanic-ash.pdf" target="_blank"> Volcanic Ash - Bureau of Meteorology</a> <br>
+    <a href="https://www.britannica.com/science/obsidian" target="_blank"> Obsidian - Encyclopedia Britannica</a> <br>
+</footer>
+</body>
+
+</html>

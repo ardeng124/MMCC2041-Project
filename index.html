@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Volcanoes: Home</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200;300;400;600&family=Raleway:wght@100;300;400;800;900&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+    <script>
+        $(document).ready(function () {
+           
+            $(".next-page-btn").click(function (e) {
+                window.location = "volcano-formation.html"
+            });
+        })
+        
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Introduction</h1>
+        <img src="images/header landscape banner.jpg">
+    </header>
+
+    <nav>
+        <a id = "active" href="index.html"><i class="circleActive"></i> Intro</a> 
+        <a href="volcano-formation.html"><i class="circle"></i>Volcano Formation</a>
+        <a href="volcano-types.html"><i class="circle"></i>Volcano Types</a>
+        <a href="eruption-types.html"><i class="circle"></i>Eruption Types</a>
+        <a href="eruption-aftermath.html"><i class="circle"></i>Eruption Aftermath</a>
+    </nav>
+    <div id="progressBar"> </div>
+    <main>
+        <section class = "volcano-info-section-coloured">
+            <p>Volcanic eruptions are catastrophic natural disasters that can bring about destruction and chaos to local ecosystems and
+            settlements as well as global climate.
+            <br><br>
+            Due to the large amounts of ash expelled into the air global travel and weather is affected.
+            <br><br><br>
+            <b>This article will provide a basic overview of volcano formation, eruption, and impacts.</b>
+        </p>
+        </section>
+        <!-- ADD THE MAP STUFF -->
+        <section class = "volcano-aftermath-section">
+            <h2> Living with volcanoes</h2>
+            <p>While what has just been said would make you assume living near volcanoes is unwise, volcanic deposits can be very good
+                locations for agriculture.
+                Volcanic soil is rich with magnesium and potassium, making them very fertile. Volcanic ash retains moisture longer than
+                most soil, also making it useful for farming.
+                <br><br>
+                Volcanic activity can be very useful for energy, as heat from them can be harnessed for electricity.
+                <br><br>
+                Volcanoes are also good locations for mineral deposits, which are produced when rocks are heated to extreme temperatures
+                by lava. In the country of Cyprus, water was heated to extreme temperatures by an eruption, causing it to become acidic
+                and melt through rock to reveal copper deposits.
+            </p>    
+        </section>
+        <img class = "volcano-img-xtra-large"src = "images/18639d5b1f7e40dfbfad6b3bd9c407e9.jpg" alt = "Large image of Krakatoa">
+        <p class="caption" style = "margin-left:5%"> Image of Anak Krakatoa erupting <a href="https://peapix.com/bing/28552" target="_blank">Source </a></p>
+
+        <section class = "volcano-info-section-coloured-bottom ">
+            <div class = "left">
+            <h2> Impact on culture</h2>
+            <p>
+                Eruptions also commonly cause further earthquakes and tsunamis, adding to the destruction.
+                <br><br>
+                Due to the destructive and catastrophic nature of volcanic eruptions, they have had significant impact on cultures near
+                them.
+                <br><br><br>
+                
+                One particularly significant impact was the Krakatoa eruption of 1883 which inspired the painting “The Scream” By
+                Edward Munch.
+                <br><br>
+                His journal quote <i>“Suddenly the sky turned blood red, There was blood and tongues of fire above the blue-black fjord and
+                the city—my friends walked on, and I stood alone, trembling with anxiety. I felt a great, unending scream piercing
+                through nature.” <a href = "https://www.sciencefriday.com/articles/the-art-and-history-shaped-by-volcanic-winters/" target="_blank">(source)</a></i>.
+                <br><br>
+                The blood red tongues of fire are believed to be dust and gasses that were expelled into the atmosphere because of the
+                Krakatoa eruption.
+            </p>
+            </div>
+            <div class = "right">
+                <br>
+                <figure class="imgHolder">
+                    <img src="images/the-scream.jpg" alt="Painting: The Scream by Edward Munch">
+                    <figcaption> <i>The Scream </i>by Edward Munch <a href="https://www.britannica.com/place/Kilauea" target="_blank">Source</a>
+                        </a></figcaption>
+                </figure>
+            </div>
+        </section>
+    <br>        
+    </main>
+    <footer>
+    <button class = "next-page-btn"><span>Next: Formation </span></button>
+        Sources for this page: <br>
+    <a href="https://www.sciencefriday.com/articles/the-art-and-history-shaped-by-volcanic-winters/" target="_blank"> Art and history affected by volcanic winters - Science Friday</a> 
+</footer>
+</body>
+
+</html>

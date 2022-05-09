@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Volcanoes: Eruption Types</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200;300;400;600&family=Raleway:wght@100;300;400;800;900&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+    <script>
+        $(document).ready(function () {
+            $(".next-page-btn").click(function (e) {
+                window.location = "eruption-aftermath.html"
+            });
+            $(function () {
+                if (window.location.hash == "#vulcanian-eruptions") {
+                    $('html,body').stop().animate({
+                        scrollTop: 2958
+                    }, {
+                        duration: 800
+                    });
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Eruption Types</h1>
+        <img src="images/header landscape banner.jpg">
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="circle"></i> Intro</a> 
+        <a href="volcano-formation.html"><i class="circle"></i>Volcano Formation</a>
+        <a href="volcano-types.html"><i class="circle"></i>Volcano Types</a>
+        <a id = "active" href="eruption-types.html"><i class="circleActive"></i>Eruption Types</a>
+        <a href="eruption-aftermath.html"><i class="circle"></i>Eruption Aftermath</a>
+    </nav>
+        <div id="progressBar"> </div>
+    <main>
+        <section id="top-message">
+
+            <br>
+            <img src = "images/types-eruptions.jpg" width="100%" alt= "diagram of 6 main eruption types">
+            <p class = "caption"> Diagram of the various eruption types <a href = "https://www.britannica.com/science/volcano/Six-types-of-eruptions"target="_blank">Source </a></p>
+
+            <p>There are six main types of volcanic eruptions; Hawaiian, Strombolian, Icelandic, Vulcanian, Pelean, Plinian.</p>
+            
+        </section>
+        <section class = "volcano-type-section-coloured" id = "hawaiian-eruption-section">
+                <div class = "left">
+                    <figure class="imgHolder" >
+                        <img src="images/Eruption-Kilauea-Hawaii-Volcanoes-National-Park-1983.jpg" alt="image of Kilauea erupting">
+                        <figcaption>Image of Kilauea erupting, <a
+                                href="https://www.britannica.com/place/Kilauea"
+                                target="_blank">Source</a> </a></figcaption>
+                    </figure>
+                </div>
+                <div class = "right">
+                    <h2>Hawaiian Eruptions</h2>
+                    <p>
+                        Hawaiian eruptions are exclusive to <a href = "volcano-types.html#shield-volcanoes">shield volcanoes</a>, and involve lava flows from fissures.
+                        <br><br>
+
+                        They are one of the least explosive types of eruptions and involve very low viscosity lava.  
+                        <br><br>
+
+                        Shield volcanoes can also erupt in a fissure eruption, which is essentially a Hawaiian eruption but instead of flowing from the main vent lava flows from cracks or fissures (as the name suggests).
+                    </p>
+                </div>
+        </section>
+
+        <section class="volcano-type-section" id = "strombolian-section">
+            <div class="left">
+                <h2>Strombolian eruptions</h2>
+                <p>
+                    Strombolian eruptions are moderately explosive, and involve clumps of lava in frequent spluttery eruptions.
+                    <br><br>
+                    Strombolian eruptions are named after Mt. Stromboli in Italy. 
+                    <br><br>
+                    Strombolian eruptions often form <a href ="volcano-types.html">cinder cones.</a>
+                    <br><br>
+
+                    Similarly to Hawaiian eruptions, strombolian eruptions in certain volcanoes are very frequent, almost continuous.
+
+                </p>
+            </div>
+            <div class="right">
+                <figure class="imgHolder">
+                    <img src="images/Volcano-1.jpeg" alt="diagram of a strombolian eruption">
+                    <figcaption>Diagram of a strombolian eruption, <a
+                            href="https://www.pmfias.com/eruptive-volcanism-types-strombolian-vulcanian-plinian-pelean/"
+                            target="_blank">Source</a></figcaption>
+                </figure>
+            </div>
+        </section>
+        <div class = "parallax" id = "parallax-4"> </div>
+        <p class = "caption"> Image of Mt Stromboli <a href = "https://en.wikipedia.org/wiki/Stromboli"target="_blank">Source </a></p>
+
+        <section class="volcano-type-section-coloured" id = "icelandic-eruption-section">
+            <div class="left">
+                <figure class="imgHolder">
+                    <img src="images/fissure-eruption-iceland.webp" alt="Image of a icelandic eruption">
+                    <figcaption>Image of the Bárðarbunga volcano in Iceland, <a
+                            href="https://eos.org/research-spotlights/magma-flow-in-a-major-icelandic-eruption"
+                            target="_blank">Source</a></figcaption>
+                </figure>
+            </div>
+            <div class="right">
+                <h2>Icelandic eruptions</h2>
+                <p>Icelandic eruptions are very similar to Hawaiian but instead involve long parallel fissures instead of a main volcano.</p>
+            </div>
+        </section>
+    
+        <section class="volcano-type-section" id = "vulcanian-eruption-section">
+            <div class="left">
+                <h2>Vulcanian eruptions</h2>
+                <p>
+                    Vulcanian eruptions are like Strombolian ones but much more explosive, forming dark clouds of ash and gas. 
+                    <br><br>
+                    Vulcanian eruptions are named after Vulcano Island, which is named after the Roman God of fire.
+                    <br><br>
+
+                    The vulcanian eruption of Mt. Pelee was the first ever 
+                    <span class = "tooltip">pyroclastic flow 
+                        <span class = "tooltip-text">A thick and fast moving flow of lava and volcanic ash</span>
+                    </span>
+                    documented.
+
+                    <br><br>
+                    More on pyroclastic flows in the next <a href ="eruption-aftermath.html#pyroclastic">section.</a>
+                </p>
+            </div>
+            <div class="right">
+                <br><br><br><br>
+                <figure class="imgHolder">
+                    <img src="images/volcanic-eruption-657324444-5b8eb29c46e0fb002525f73c.jpg" alt="Image of a vulcanian eruption">
+                    <figcaption>Image of a vulcanian eruption, <a
+                            href="https://eos.org/research-spotlights/magma-flow-in-a-major-icelandic-eruption"
+                            target="_blank">Source</a></figcaption>
+                </figure>
+            </div>
+        </section>
+        <div class = "parallax" id = "parallax-3"> </div>
+        <caption> Image of Mt Pelee <a href = "https://twitter.com/visitmartinique/status/993540298751045633"target="_blank">Source </a></caption>
+
+        <section class="volcano-type-section-coloured" id = "plinian-eruption-section">
+            <div class="left">
+                <h2>Plinian eruptions</h2> 
+               <p>
+                Plinian eruptions are the most violent and explosive type of eruption. 
+                <br><br>
+
+                They produce high rising clouds of gas and ash that not only rise into the stratosphere but can be continuous for hours. 
+                <br><br>
+                Plinian eruptions are named after Pliny the Younger, who recorded the events of the Mt. Vesuvius eruption. 
+                <br><br>
+                Plinian eruptions are often so violent that they cause part of the volcano to collapse, forming what is known as a caldera.
+               </p>
+            </div>
+            <div class="right">
+                <figure class="imgHolder">
+                    <img src="images/vhp_img571.jpg" alt="Image of a plinian eruption">
+                    <figcaption>Image of a plinian eruption, <a
+                            href="https://www.usgs.gov/media/images/plinian-eruption-column-may-18-1980-mount-st-helens"
+                            target="_blank">Source</a></figcaption>
+                </figure>
+            </div>
+        </section>
+        
+    </main>
+    
+<footer>
+    <button class="next-page-btn"><span>Next: Aftermath </span></button>
+    Sources for this page: <br>
+    <a href="https://www.britannica.com/science/volcano/Six-types-of-eruptions" target="_blank"> Six types of eruptions - Encyclopedia Britannica</a> <br>
+    <a href="https://openpress.usask.ca/physicalgeology/chapter/11-4-types-of-volcanic-eruptions/"
+        target="_blank">Types of Volcanic Eruptions - University of Saskatchewan</a>
+</footer>
+</body>
+
+</html>
